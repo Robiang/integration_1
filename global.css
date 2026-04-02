@@ -1,0 +1,137 @@
+/* RESET */
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header {
+    background-color: #2E6EB5;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:75px
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+}
+
+/* NAV */
+nav {
+    background-color: #6E6E6E;
+    width: 220px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-block-start: 10px;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+}
+
+/* HERO */
+.hero {
+    background-color: #F07A24;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-block-start: 10px;
+}
+
+.hero h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #eeeeee;
+    color: #F07A24;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* SERVICES */
+.services-title {
+    background-color: #ddd;
+    padding: 10px;
+}
+
+.services h2 {
+    background-color: #5FA51A;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    font-size: 20px;
+    grid-column: 1 / -1;
+}
+
+/* BOX */
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 0px;
+    column-gap: 50px;
+}
+
+.service-box {
+    background-color: #6EEB4D;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+/* INFO */
+.info {
+    background-color: #8B5FA8;
+    color: white;
+    text-align: center;
+    padding: 100px;
+    margin-block: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.info h1 {
+    font-size: 20px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+}
