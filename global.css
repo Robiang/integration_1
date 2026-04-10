@@ -85,23 +85,22 @@ main {
     grid-column: 1 / -1;
 }
 
-/* BOX */
 .services {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 0px;
-    column-gap: 50px;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 0 1.25rem;
 }
 
 .service-box {
     background-color: #6EEB4D;
-    height: 220px;
+    height: 13.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 /* INFO */
@@ -109,8 +108,8 @@ main {
     background-color: #8B5FA8;
     color: white;
     text-align: center;
-    padding: 100px;
-    margin-block: 10px;
+    padding: 3.125rem 1.25rem;
+    margin: 10px 0;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -119,7 +118,7 @@ main {
 }
 
 .info h1 {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 /* FOOTER */
@@ -127,11 +126,54 @@ footer {
     background-color: #444;
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 1.5625rem;
     font-weight: bold;
     font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 85px;
+    height: 5.3125rem;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablet */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    nav {
+        width: 13.75rem;
+        flex-direction: column;
+        margin-right: 10px;
+        margin-bottom: 0;
+        padding: 20px 10px;
+    }
+
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+        padding: 0;
+    }
+
+    .hero {
+        padding: 3.75rem 1.25rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    nav {
+        width: 13.75rem;
+    }
+
+    .services {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3.125rem;
+    }
+
+    .hero {
+        padding: 3.75rem 2.5rem;
+    }
 }
